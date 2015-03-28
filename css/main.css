@@ -1,44 +1,58 @@
+/*  GENERAL */
 
-/*images*/
-img {
-	max-width: 100%;
+* {
+	box-sizing:border-box;
 }
 
-body {
+html {
+	position:relative;
+	min-height: 100%;
+}
 
-	background: white;
+	body, .container {
+	height: 100%;
+}
+
+
+/*images*/
+/*img {
+	max-width: 100%;
+}*/
+
+body {
+	margin:0 0 60px 0;
+	padding:0;
+	background: url('../img/coverpage.jpg') no-repeat center fixed;
+	background-size: cover;
 }
 
 /*Header (Nasarow fo to)*/
 header {
-	float: left;
-	margin: 0 0 30px 0;
-	padding: 0 0 0 0;
-	width:100%;
-}
-/* Light green header */
-header {
-	background: #1EFF09;
-	border-color: #599a68;
-
-}
-
-header h2 {
+	color:deepskyblue;
 	text-align: center;
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0 0 8rem 0;
+	width:100%;
+	background: linear-gradient(#1864DF, transparent 90%);
+	border-color: #599a68;
+	/* Rectangle 6: */
+	/*background-image: linear-gradient(-180deg, rgba(86,215,35,0.80) 0%, rgba(88,188,31,0.50) 100%);*/
 }
+
 
 /* Navigation*/
 nav {
 	text-align: center;
 	margin: 20px 0 0;
 	padding: 10px 0;
-	background: rgba(10,221,16,1.0);
-
 }
+
 nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+
 }
 nav li {
 	display: inline-block;
@@ -48,43 +62,21 @@ nav li {
 	list-style: none;
 }
 
-a:hover {
+nav a {
+	color: #FA9017;
+}
+
+nav a.selected, a:hover {
+	color: #FAF017;
 	text-decoration: none;
 }
 
-
-
-nav a.selected, a:hover {
-	color: #1603FF;
-}
-
-
-
-/*body div welcome*/
-
-#welcomediv {
-	
-}
-
-#welcomediv p {
-	padding-top: 10px;
-}
-
-#welcomediv img {
-	max-height: 500px;
-
-
-}
-
-
-
 .lead {
 	text-align: center;
+	color:white;
 }
 
-.welcome {
-	text-align: center;
-}
+
 
 /*View Work Button*/
 
@@ -96,15 +88,20 @@ nav a.selected, a:hover {
 	border: 2px solid #5E4F94;
 	box-shadow: 2px 1px 0px 0px rgba(13,17,64,0.50);
 	border-radius: 8px;
-	margin-top:20px;
+	margin-top:300px;
+	margin-bottom: 50px;
 	max-width: 100px;
+
 
 }
 
 /***********GALLERY***************/
-#gallery img {
-	max-height: 250px;
+#gallery  img {
+    max-height: 250px;
+    width:auto;
 }
+	
+
 
 /*******ABOUT********/
 
@@ -136,5 +133,56 @@ nav a.selected, a:hover {
 footer {
 	font-size: 0.75em;
 	text-align:center;
-	padding-top: 50px;
+	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+  	/* Set the fixed height of the footer here */
+  	height: 60px;
 }
+
+/* Responsiveness */
+
+@media screen and (min-width: 580px) {
+	/**********
+	Page: Header and Nav
+
+	***********/
+	
+
+	header h2 {
+		text-align: left;
+		margin-left: 5%;
+		float: left;
+		padding-top: 15px;
+	}
+
+	nav {
+		float: right;
+		text-align: right;
+		margin-right: 5%;
+		font-size: 1.130em;
+		background: none;
+
+	}
+
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
