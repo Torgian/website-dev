@@ -9,10 +9,6 @@ html {
 	min-height: 100%;
 }
 
-	body, .container {
-	height: 100%;
-}
-
 
 /*images*/
 /*img {
@@ -96,11 +92,14 @@ nav a.selected, a:hover {
 }
 
 /***********GALLERY***************/
-#gallery  img {
-    max-height: 250px;
-    width:auto;
+
+.img-thumbnail {
+	margin:20px;
 }
-	
+
+#gallery img {
+	max-height: 200px;
+}
 
 
 /*******ABOUT********/
@@ -128,6 +127,7 @@ nav a.selected, a:hover {
 }
 
 
+
 /*Footer area*/
 
 footer {
@@ -139,6 +139,7 @@ footer {
   	/* Set the fixed height of the footer here */
   	height: 60px;
 }
+
 
 /* Responsiveness */
 
