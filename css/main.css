@@ -136,23 +136,17 @@ footer {
 /* DRY Classes*/
 
 .img-height {
-	max-height: 300px;
-	overflow: hidden;
+	max-height: 250px;
+
 
 }
 
-.img-thumbnail {
-	margin:20px;
-
-}
 
 .image-wrapper {
-  margin-left: auto;
-  margin-right: auto;
+	height: 300px;
+	width: auto;
 }
-.img-responsive {
-  vertical-align: middle;
-}
+
 
 
 /* Responsiveness */
