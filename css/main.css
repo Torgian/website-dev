@@ -93,13 +93,9 @@ nav a.selected, a:hover {
 
 /***********GALLERY***************/
 
-.img-thumbnail {
-	margin:20px;
-}
 
-#gallery img {
-	max-height: 200px;
-}
+
+
 
 
 /*******ABOUT********/
@@ -116,14 +112,11 @@ nav a.selected, a:hover {
 	display: block;
 	padding: 10px 0 0 0;
 }
-#about-me {
-	padding: 0 0 0 0;
-	margin: 3% 0 0 2%;
-}
+
 #about-me p{
 	text-decoration:none;
 	padding: 0 0 2% 5px;
-	margin: 0 0 0 0;
+	margin: 20px 0 0 0;
 }
 
 
@@ -138,6 +131,27 @@ footer {
   	width: 100%;
   	/* Set the fixed height of the footer here */
   	height: 60px;
+}
+
+/* DRY Classes*/
+
+.img-height {
+	max-height: 300px;
+	overflow: hidden;
+
+}
+
+.img-thumbnail {
+	margin:20px;
+
+}
+
+.image-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-responsive {
+  vertical-align: middle;
 }
 
 
@@ -165,10 +179,8 @@ footer {
 		background: none;
 
 	}
-
-	
-
 }
+
 
 
 
