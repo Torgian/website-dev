@@ -18,7 +18,7 @@ html {
 body {
 	margin:0 0 60px 0;
 	padding:0;
-	background: url('../img/coverpage.jpg') no-repeat center fixed;
+		background: url('../img/coverpage.jpg') no-repeat center fixed;
 	background-size: cover;
 }
 
@@ -58,14 +58,18 @@ nav li {
 	list-style: none;
 }
 
-nav a {
+a[href$=".html"] {
 	color: #FA9017;
 }
+
+
 
 nav a.selected, a:hover {
 	color: #FAF017;
 	text-decoration: none;
 }
+
+
 
 .lead {
 	text-align: center;
@@ -87,12 +91,16 @@ nav a.selected, a:hover {
 	margin-top:300px;
 	margin-bottom: 50px;
 	max-width: 100px;
+	color: black;
 
 
 }
 
 /***********GALLERY***************/
 
+img[src*="-fo-to"]{
+	max-height: 250px;
+}
 
 
 
@@ -104,20 +112,33 @@ nav a.selected, a:hover {
 	text-align: center;
 	margin: 0 25px;
 	padding-bottom: 10px;
+	color: skyblue;
 }
 
-#about_div img{
-	border-radius: 50%;
-	max-height:250px;
-	display: block;
-	padding: 10px 0 0 0;
-}
 
-#about-me p{
+.p-style p{
 	text-decoration:none;
 	padding: 0 0 2% 5px;
 	margin: 20px 0 0 0;
+	line-height: 30px;
 }
+
+.p-style p:nth-child(3n+1)::first-line,
+.p-style p:nth-child(3n+1)::first-letter{
+	font-size: 1.5em;
+}
+
+.p-style p:nth-child(-n+5)::before {
+	content: "";
+	display:inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	margin: 0 5px;
+}
+
+
+
 
 
 
@@ -131,23 +152,32 @@ footer {
   	width: 100%;
   	/* Set the fixed height of the footer here */
   	height: 60px;
+  	color:lightgrey;
 }
 
 /* DRY Classes*/
 
-.img-height {
-	max-height: 250px;
-
-
+.col-xs-12,
+.col-sm-6,
+.col-md-4, 
+.col-lg-3:only-child {
+	height:300px;
+	width:auto;
 }
 
 
-.image-wrapper {
-	height: 300px;
-	width: auto;
+
+
+.round{
+	border-radius: 50%;
+	max-height:250px;
+	display: block;
+	padding: 10px 0 0 0;
 }
 
-
+/*a[href$=".html"]:disabled {
+	background-color:#fff;
+}*/
 
 /* Responsiveness */
 
